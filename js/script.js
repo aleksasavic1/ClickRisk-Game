@@ -16,7 +16,8 @@ const changeUsername = () => {
 
 const click_ = btn => {
     let parentElement = btn.parentElement;
-    let points = parentElement.querySelector(".points").innerText;
+    let pointsField = parentElement.querySelector(".points");
+    let points = pointsField.innerText;
     points = parseInt(points);
 
     let grandparentElement = parentElement.parentElement;
@@ -49,6 +50,10 @@ const click_ = btn => {
     points = parentElement.querySelector(".points").innerText = points;
 
     let username = parentElement.querySelector(".username").innerText;
+
+    if(points === 40) {
+        pointsField.style.color = "#a4a423";
+    }
 
     if(points === 50) {
         displayWinner.style.display = "flex";
