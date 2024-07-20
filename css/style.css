@@ -1,0 +1,177 @@
+body {
+    color: white;
+
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+
+}
+
+h1 {
+    font-family: sans-serif;
+    margin: 25px 0 20px 0;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    color: hsl(0, 0%, 90%);
+    text-shadow: 3px 3px 3px hsl(0, 0%, 40%);
+}
+
+.changeUsername {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.points {
+    font-size: 50px;
+    color: hsl(0, 100%, 60%);
+}
+
+.col {
+    font-family: monospace;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.row {
+    border: 2px solid hsl(0, 0%, 20%);
+    background-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 12px;
+
+    position: relative;
+}
+
+button.clickBtn, button.confirmBtn {
+    padding: 6px 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    color: white;
+}
+
+.clickBtn {
+    background-color: hsla(240, 100%, 70%, 0.05);
+    transition: 400ms;
+}
+
+.confirmBtn {
+    background-color: hsla(120, 100%, 30%, 0.05);
+    transition: 400ms;
+}
+
+.clickBtn:hover {
+    background-color: hsla(240, 100%, 70%, 0.15);
+}
+
+.confirmBtn:hover {
+    background-color: hsla(120, 100%, 30%, 0.15);
+}
+
+.rules {
+    margin: 40px 0;
+    background-color: hsla(0, 0%, 0%, 0.96);
+    padding: 15px;
+    border: 1px solid white;
+    border-radius: 8px;
+}
+
+
+
+
+
+
+/*-----------*/
+
+.overlay {
+    position: absolute;
+    background-color: hsla(0, 0%, 0%, 0.92);
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.overlay button {
+    padding: 15px 45px;
+    font-size: 30px;
+    font-weight: 500;
+    background-color: #00000000;
+    color: white;
+    border: 2.5px solid white;
+    border-radius: 8px;
+
+    transition: 400ms;
+}
+.overlay button:hover {
+    color: hsl(120, 96%, 47%);
+    border: 2.5px solid hsl(120, 96%, 47%);
+}
+
+.overlay1 {
+    background-color: hsla(120, 100%, 4%, 0.98);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px 0 0 12px;
+
+    border-right: 1px solid hsl(0, 0%, 20%);
+}
+.overlay2 {
+    background-color: hsla(120, 100%, 4%, 0.98);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 12px 12px 0;
+
+    border-left: 1px solid hsl(0, 0%, 20%);
+}
+.overlay1 h2, .overlay2 h2 {
+    font-size: 60px;
+    font-weight: bold;
+    color: hsla(0, 100%, 55%, 0.8);
+    text-shadow: 2px 2px 2px black;
+}
+
+
+.winner {
+    position: absolute;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    background-color: hsla(0, 0%, 0%, 0.95);
+    border-radius: 12px;
+}
+
+.winner button {
+    padding: 4px 10px;
+    border: none;
+    background-color: #00000000;
+    color: white;
+    margin-top: 6px;
+    border: 1px solid white;
+    border-radius: 4px;
+
+    transition: 400ms;
+}
+.winner button:hover {
+    color: hsl(60, 100%, 70%);
+    border: 1px solid hsl(60, 100%, 70%);
+}
